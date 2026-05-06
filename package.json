@@ -22,9 +22,7 @@
   "jest": {
     "testEnvironment": "node",
     "testMatch": [
-      "**/tests/*.test.js",
-      "**/tests/userTest.js",
-      "**/tests/test-projects.js"
+      "**/tests/*.test.js"
     ]
   }
 }

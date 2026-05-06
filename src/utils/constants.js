@@ -4,7 +4,6 @@ const MAX_PAGE_SIZE = 100;
 const VALID_TASK_STATUSES = ['active', 'completed', 'archived'];
 const EMAIL_FROM = 'noreply@taskr.io';
 
-// These helpers belong in utils.js but ended up here
 function formatError(message, code) {
   return { error: message, code };
 }
