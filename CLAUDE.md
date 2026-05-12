@@ -61,6 +61,10 @@ Server runs on port 3000. Check `GET /health` to confirm it's up.
 
 **Pagination** on `GET /tasks`: `?page=&page_size=`, default 20, max 100.
 
+## Verification
+
+After completing any significant change, run `/verify-app` before committing. Do not commit if any tests are failing. The test suite uses Supertest and covers all API endpoints. A passing run confirms the full application is working correctly.
+
 ## Testing
 
 Tests set `NODE_ENV=test` at the top of each file, which causes `src/db/connection.js` to use `:memory:`. `tests/schema.js` exports `createSchema(db)` — called in `beforeAll` to build the schema. Each `beforeEach` wipes all tables and inserts a minimal user + project fixture so tests are independent.
