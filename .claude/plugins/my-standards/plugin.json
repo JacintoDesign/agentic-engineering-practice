@@ -1,0 +1,5 @@
+{
+  "name": "my-standards",
+  "version": "1.0.0",
+  "description": "Personal coding standards enforcing layered architecture, kebab-case naming, and separation of concerns across routes, services, and queries."
+}
