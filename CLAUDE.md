@@ -61,6 +61,12 @@ Server runs on port 3000. Check `GET /health` to confirm it's up.
 
 **Pagination** on `GET /tasks`: `?page=&page_size=`, default 20, max 100.
 
+## Active plugins
+
+The `my-standards` plugin is active. Its conventions apply to all code in this project.
+
+- **`my-standards:api-endpoints`** — use this skill when adding any new route. It defines the required file structure, naming, error handling, response envelope, and pre-commit checklist.
+
 ## Verification
 
 After completing any significant change, run `/verify-app` before committing. Do not commit if any tests are failing. The test suite uses Supertest and covers all API endpoints. A passing run confirms the full application is working correctly.
